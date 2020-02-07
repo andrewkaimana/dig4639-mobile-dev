@@ -2,7 +2,9 @@ import "./index.css"
 
 class Task {
     constructor(props) {
+        // Stores the argument in this.props
         this.props = props;
+        // Creates a new HTML DIV element
         this.element = document.createElement("div");
         let checkbox = document.createElement("input");
         checkbox.type = "checkbox";

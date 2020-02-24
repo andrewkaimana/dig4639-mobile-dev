@@ -1,17 +1,15 @@
-import "./index.css";
+import React from 'react';
+import './index.css';
 
-class App {
-    constructor(props) {
-        this.props = props;
-        this.element = document.createElement("div");
-        let span = document.createElement("span");
-        this.element.appendChild(span);
-        span.innerHTML = this.props.content;
-        this.element.className = "card";
-    }
-    render() {
-      return this.element;
-    }
+class Card extends React.Component {
+  render() {
+  return(
+  <div class="title">
+    <h3>{this.props.title}</h3>
+    <p>{this.props.content}</p>
+  </div>
+  );
   }
-  
-  export default App;
+}
+
+export default Card;

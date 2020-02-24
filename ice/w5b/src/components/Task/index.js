@@ -10,18 +10,19 @@ class Task {
         checkbox.type = "checkbox";
         this.onClick = this.onClick.bind(this);
         checkbox.addEventListener("change",this.onClick);
-
         this.element.appendChild(checkbox);
         let span = document.createElement("span");
         this.element.appendChild(span);
         span.innerHTML = this.props.content;
         this.element.className = "task";
     }
+
     onClick(e) {
         console.log(this);
         console.log(e.target);
         console.log(e.target.checked);
     }
+
     render() {
         return this.element;
     }

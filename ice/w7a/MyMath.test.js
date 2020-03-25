@@ -1,4 +1,4 @@
-import { Sum, AddList } from './MyMath.js'
+import { Sum } from './MyMath.js'
 
 describe('Testing AddList', () => {
   it('Returns the sum of a list of numbers', () =>

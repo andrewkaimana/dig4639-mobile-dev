@@ -3,7 +3,12 @@ import React from 'react';
 import './App.css';
 import todoList from './todoList.json'
 
-class TodoItem extends React.Component {
+this.variable = [{},
+
+  {myVar:"Hello"}]
+
+  console.log(this.variable[0].myVar)
+/*class TodoItem extends React.Component {
   render (props) {
     return <p className='card'>{this.props.content}<input type="button" value="X"
       onClick={() => this.props.removeTask(this.props.id)}/></p>

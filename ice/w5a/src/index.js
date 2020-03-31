@@ -16,6 +16,13 @@ function onClick () {
   console.log('clicked!')
   var newTask = new Task({ content: input.value, done: false })
   element.appendChild(newTask.render())
+function onClick() {
+    console.log("clicked!");
+    console.log(document.getElementById("task"));
+    if (document.getElementById("task") != undefined){
+        var newTask = new Task({content:input.value,done:false});
+        element.appendChild(newTask.render());
+    }   
 }
 
 /* function onClick() {
@@ -37,4 +44,4 @@ function onClick () {
     element.appendChild(newTask);
 } */
 
-window.addEventListener('DOMContentLoaded', runOnLoad)
+window.addEventListener('DOMContentLoaded', runOnLoad)}

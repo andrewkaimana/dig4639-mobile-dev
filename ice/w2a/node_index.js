@@ -20,3 +20,7 @@ function scopeDemo(y1) {
 }
 x = scopeDemo(y1);
 console.log(y);
+<<<<<<< HEAD
+console.log(0);
+=======
+>>>>>>> e8664df465d730f964f6c7bbcad745e93755b2fa

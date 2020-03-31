@@ -1,48 +1,10 @@
-// client/App.js
 import React from 'react';
-import './App.css';
-import './components/Card/index.css';
-import Card from './components/Card/'
-/*
-class App extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {content:"", list: []}
-  }
-  
-  async getServerData() {
-   // const response = await fetch("http://localhost:3001")
-    const response = await fetch("https://api.weather.gov/gridpoints/MLB/25,69/forecast")
-    console.log("Received response from server!")
-    console.log(response)
-    let obj = await response.json()
-    console.log("Processed response as JSON: ", obj)
-    this.setState({content:obj.b})
-    // this.setState({list:obj})
-  }
+import CardList from './components/CardList/index.js'
 
-  componentDidMount() {
-    console.log("Component did mount!")
-    this.getServerData()
-  }
-
-  render() {
-    return (
-      <div>
-        <p>{this.state.content}</p>
-        {this.state.list.map((listObject, index) =>
-        <Card key={index} title={listObject.name}>
-          {listObject.temperature}
-          </Card>
-        )}
-      </div>
-    )
-  }
-}
-*/
 function App() {
   return (
-    <Card />
+    <CardList />
   );
 }
+
 export default App;

@@ -6,7 +6,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {content:"", list: []}
-  }
+  } 
   
   async getServerData() {
     // const response = await fetch("http://localhost:3001")

@@ -1,10 +1,28 @@
-.card {
+/*.card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 60%;
+    max-width: 50%;
     margin: auto;
     text-align: center;
     padding: 1em;
     transition: opacity 1s;
-    background-image: url("https://www.watersliderentalswesternma.com/Dunk_Tank_Rentals_in_Western_MA_files/cloud_2_4.gif");
+    background-color: orange;
     border: 2px solid black;
+  }*/
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 1em;
+    border: 1px solid black;
+    background-color: #add8e6;
   }
+  
+  .close {
+    font-size: 1.5em;
+    float: right;
+    cursor: pointer;
+  } 
+
+  

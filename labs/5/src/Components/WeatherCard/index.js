@@ -16,7 +16,7 @@ class WeatherCard extends React.Component {
   render () {
     return (
       <div className="card">
-        <h1>{this.props.name}</h1>
+        <h2>{this.props.name}</h2>
         <h3>{this.props.temperature} {this.props.temperatureUnit}</h3>
         <p>{this.props.detailedForecast}</p>
       </div>
@@ -24,4 +24,4 @@ class WeatherCard extends React.Component {
   }
 }
 
-export default WeatherCard
+export default WeatherCard 

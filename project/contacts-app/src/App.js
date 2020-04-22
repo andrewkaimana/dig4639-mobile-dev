@@ -23,14 +23,17 @@ class App extends React.Component {
 			method: 'POST',
 			body: JSON.stringify({ 
         name: this.refs.firstName.value + ' ' + this.refs.lastName.value,
-			  number: this.refs.phoneNum.value }),
+			  number: this.refs.phone.value }),
 			headers: { "Content-type": "application/json", API: "kaimana" }
     })
     .then(res => { return res.json() })
     .then(() => {
       this.fetchProfile();
       this.fetchUsers();
-			});
+      });
+    this.refs.firstName.value = "";
+    this.refs.lastName.value = "";
+    this.refs.phone.value = "";
   }
   
   delete = (index) => {
@@ -106,7 +109,7 @@ class App extends React.Component {
               <dd><input ref="phone" type="text" placeholder="xxx-xxx-xxxx" className="inputBox ml-2" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></input></dd>
               <span></span>
           </dl>
-          <button type="submit" className="myButton ml-4 col-2">Add</button>
+          <button type="submit" className="myButton ml-4">Add</button>
         </fieldset>
       </form>
       <br/>
